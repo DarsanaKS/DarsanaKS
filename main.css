@@ -14,7 +14,7 @@ body {
 }
 
 nav {
-    background-color: #E78895; /* dark pink #BCE2C Mint Green Nav */
+    background-color: #BE5985; /* dark pink #BCE2C Mint Green Nav */
     padding: 15px 0;
     z-index: 10; 
 }
@@ -58,7 +58,7 @@ nav {
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #E78895; /* Dark pink dropdown */
+    background-color: #BE5985; /* Dark pink dropdown */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -106,7 +106,7 @@ header p {
 
 .btn {
     display: inline-block;
-    background-color: #E78895;
+    background-color: #BE5985;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -130,7 +130,7 @@ header p {
 }
 
 footer {
-    background: #E78895; /* dark pink footer */
+    background: #BE5985; /* dark pink footer */
     color: #333;
     text-align: center;
     padding: 20px 0;

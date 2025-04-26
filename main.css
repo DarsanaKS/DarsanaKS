@@ -14,7 +14,7 @@ body {
 }
 
 nav {
-    background-color: #E78895; /* #BCE2C Mint Green Nav */
+    background-color: #E78895; /* dark pink #BCE2C Mint Green Nav */
     padding: 15px 0;
     z-index: 10; 
 }
@@ -52,7 +52,7 @@ nav {
 }
 
 .nav-menu a:hover {
-    background-color: #A9C6FA; /* Light Blue hover */
+    background-color: #EC7FA9; /* Light pink hover */
 }
 
 .dropdown-menu {
@@ -95,7 +95,10 @@ header h1 {
     font-size: 3em;
     margin-bottom: 10px;
 }
-
+header h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
 header p {
     font-size: 1.2em;
     margin-bottom: 30px;
@@ -103,7 +106,7 @@ header p {
 
 .btn {
     display: inline-block;
-    background-color: #007bff;
+    background-color: #E78895;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -112,7 +115,7 @@ header p {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #EC7FA9;
 }
 
 .content-section {
@@ -127,7 +130,7 @@ header p {
 }
 
 footer {
-    background: #BCE2CF; /* Mint Green footer */
+    background: #E78895; /* dark pink footer */
     color: #333;
     text-align: center;
     padding: 20px 0;

@@ -1,8 +1,7 @@
 ## Hi there 👋
 
 I am Darsana Kacherimedu Sivaraman.
-This is my private Git. :)
-
+Welcome to my space! Refer to my portfolio on https://github.com/DarsanaKS/DarsanaKS/index.html
 <!--
 **DarsanaKS/DarsanaKS** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

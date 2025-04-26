@@ -14,7 +14,7 @@ body {
 }
 
 nav {
-    background-color: #BCE2CF; /* Mint Green Nav */
+    background-color: #E78895; /* #BCE2C Mint Green Nav */
     padding: 15px 0;
     z-index: 10; 
 }
@@ -58,7 +58,7 @@ nav {
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #BCE2CF; /* Mint Green dropdown */
+    background-color: #E78895; /* Dark pink dropdown */
     list-style: none;
     padding: 0;
     margin: 0;

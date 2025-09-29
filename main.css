@@ -16,7 +16,7 @@ body {
 nav {
     background-color: #E78F81; /* #EC7FA9 and #EC7FA9 light pink band #BE5985 dark pink hover only #BCE2C Mint Green Nav changed*/
     padding: 15px 0;
-    z-index: 1000; 
+    z-index: 10; 
 }
 
 .nav-container {

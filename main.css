@@ -4,7 +4,7 @@ body {
     padding: 0;
     line-height: 1.6;
     color: #333;
-    background-color: #FFF5CD; /* E6E6FA-Lavender background changed to yellow*/
+    background-color: #f4e7b4cb; /* E6E6FA-Lavender background changed to yellow*/
 }
 
 .container {
@@ -77,7 +77,7 @@ nav {
 }
 
 header {
-    background: linear-gradient(135deg, #FFE4C4, #fbd5a8e0); /* Light Orange, Light Pink gradient */
+    background: linear-gradient(135deg, #ffe4c4b9, #fbd6a89e); /* Light Orange, Light Pink gradient */
     color: #333;
     text-align: center;
     padding: 100px 0;
@@ -106,7 +106,7 @@ header p {
 
 .btn {
     display: inline-block;
-    background-color: #e76b58;
+    background-color: #f5b9b0;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -115,7 +115,7 @@ header p {
 }
 
 .btn:hover {
-    background-color: #e05540;
+    background-color: #e76b58;
 }
 
 .content-section {

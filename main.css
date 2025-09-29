@@ -14,9 +14,11 @@ body {
 }
 
 nav {
+    position: fixed;
+    top: 0;
     background-color: #E78F81; /* #EC7FA9 and #EC7FA9 light pink band #BE5985 dark pink hover only #BCE2C Mint Green Nav changed*/
     padding: 15px 0;
-    z-index: 10; 
+    z-index: 1000; 
 }
 
 .nav-container {
@@ -28,7 +30,7 @@ nav {
 }
 
 .logo {
-    font-size: 1 em;
+    font-size: 1.2 em;
     font-weight: 500;
     color: #333;
 }
@@ -52,7 +54,7 @@ nav {
 }
 
 .nav-menu a:hover {
-    background-color: #f5b9b0; /* BE5985 dark pink hover */
+    background-color: #E78F81; /* BE5985 dark pink hover */
 }
 
 .dropdown-menu {
@@ -77,7 +79,8 @@ nav {
 }
 
 header {
-    background: linear-gradient(135deg, #FFEBD4, #FFEBD4); /* Light Orange, Light Pink gradient */
+    top: 0;
+    background: linear-gradient(135deg, #FFCFB3, #FFCFB3); /* Light Orange, Light Pink gradient */
     color: #333;
     text-align: center;
     padding: 100px 0;
@@ -106,7 +109,7 @@ header p {
 
 .btn {
     display: inline-block;
-    background-color: #f5b9b0;
+    background-color: #E78F81;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -115,7 +118,7 @@ header p {
 }
 
 .btn:hover {
-    background-color: #E78F81;
+    background-color: #b95344;
 }
 
 .content-section {

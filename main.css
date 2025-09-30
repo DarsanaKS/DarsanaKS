@@ -69,8 +69,8 @@ nav {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
-.dropdown-menu li:hover {
-    background-color: #b95344;  /* bg for each item on hover */
+dropdown-menu .dropdown-item:hover{
+      background-color: #b95344;  /* bg for each item on hover */
 }
 .dropdown-menu li a {
     padding: 10px 15px;

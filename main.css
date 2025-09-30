@@ -57,7 +57,7 @@ nav {
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #f5b9b0x; /* nav menu item dropdown */
+    background-color: #f5b9b0; /* nav menu item dropdown */
     list-style: none;
     padding: 0;
     margin: 0;

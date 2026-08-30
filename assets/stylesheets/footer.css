@@ -1,0 +1,61 @@
+/* --- 1. THE NAVIGATION BAR (Prev/Next) --- */
+.md-footer {
+    /* This makes the top part of the footer adapt to the page theme */
+    background-color: var(--md-default-bg-color); 
+    color: var(--md-typeset-color) !important;
+    font-size: small;
+    font-weight: 500;
+    display: block;
+}
+
+.md-footer__inner {
+    /* Constrains the Prev/Next links to the content width (no bleed) */
+    max-width: var(--md-main-px);
+    /*border-top: 1px solid var(--md-default-fg-color--lightest); */
+    max-width: calc(var(--md-main-px) - 8rem) !important;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+/* Make the Prev/Next links look like native page text */
+.md-footer__link {
+    background-color: transparent !important;
+}
+
+/* Titles (Dashboard, Applications) - Adaptive Colors */
+.md-footer__title {
+    color: var(--md-typeset-color) !important;
+    font-size: medium;
+    font-weight: 700;
+}
+
+/* Labels (Previous, Next) - Adaptive Colors */
+.md-footer__direction {
+    color: var(--md-typeset-color--light) !important;
+}
+
+/* Arrows - Force them to stay Blue */
+.md-footer__link .md-icon {
+    color: #17a1a1 !important;
+}
+
+
+/* --- 2. THE COPYRIGHT BAR (Permanent Black) --- */
+.md-footer-meta {
+    /* Hardcoded black background regardless of theme */
+    background-color: #000000 !important; 
+    color: #ffffff !important;
+    align-items: center;
+}
+
+/* Ensure the copyright text and any social icons are white */
+.md-footer-meta__inner {
+    max-width: var(--md-main-px);
+    color: #ffffff !important;
+    margin-left: 25rem;
+}
+
+.md-copyright {
+    color: rgba(255, 255, 255, 0.7) !important;
+    padding: 10px 0;
+}

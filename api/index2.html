@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>API References</title>
+  <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist@5/swagger-ui.css" />
+</head>
+<body>
+  <div id="swagger-ui"></div>
+  <!-- 1. Load Swagger UI Base Bundle -->
+  <script src="https://unpkg.com/swagger-ui-dist@5/swagger-ui-bundle.js"></script>
+  
+  <!-- 2. Load Your Custom JS File -->
+  <script src="./hide-items.js"></script>
+  <script src="./banner.js"></script>
+
+  <!-- 3. Initialize Swagger UI -->
+  <script>
+    window.onload = () => {
+      window.ui = SwaggerUIBundle({
+        url: "./sampleapi2.yaml", // Ensure sampleapi.yaml is in the SAME folder as index.html
+        dom_id: '#swagger-ui',
+        deepLinking: true,
+        
+        // Disables "Try it out" buttons
+        supportedSubmitMethods: [], 
+        // Calls the plugin defined in hide-items.js to hide "Authorize"
+        plugins: [
+          window.HideAuthorizePlugin
+        ]
+      });
+    };
+  </script>
+</body>
+</html>

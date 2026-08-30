@@ -1,0 +1,105 @@
+/* Header: Uses a specific Blue that works in both modes */
+.md-typeset table:not([class]) thead tr {
+    background-color: #17a1a1; 
+    color: #ffffff;
+}
+
+/* Zebra Rows: Using RGBA (Transparency) so it adapts to the background */
+/* This adds 3% black to the background, which works on both white and dark grey */
+.md-typeset table:not([class]) tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.05); 
+}
+
+/* Hover effect: Subtle highlight when mouse is over a row */
+.md-typeset table:not([class]) tbody tr:hover {
+    background-color: rgba(25, 118, 210, 0.1); 
+}
+
+/*====================
+tabs
+===============*/
+/* 1. The Header Container */
+.md-typeset .tabbed-set .tabbed-labels {
+    background-color: #09a1a1 !important; /* Lighter Blue Base */
+    display: flex;
+    border: 1px solid #17a1a1;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    padding: 0 !important;
+}
+
+/* 2. Hide the theme's moving underline */
+.md-typeset .tabbed-labels::after {
+    display: none !important;
+}
+
+/* 3. The Label & Anchor (Unclicked State) */
+.md-typeset .tabbed-set .tabbed-labels label {
+    flex: 1 !important;
+    padding: 0 !important; /* Let the anchor handle the padding */
+    margin: 0 !important;
+    border: none !important;
+}
+
+.md-typeset .tabbed-set .tabbed-labels label a {
+    display: block;
+    padding: 14px 28px !important;
+    color: #ffffff !important; /* White text */
+    text-decoration: none;
+    font-weight: 500;
+    /*text-transform: uppercase;*/
+    font-size: 0.75rem;
+    transition: all 0.25s ease;
+
+}
+
+/* 4. Hover State (Inside the Anchor) */
+.md-typeset .tabbed-set .tabbed-labels label:hover a {
+    background-color: #09e5e5 !important; 
+    font-weight: 900 !important;
+}
+
+
+/* 5. THE FIX: The Persistent Active State (#1976d2) */
+/* When the button is checked, find the label's anchor and color it */
+.md-typeset .tabbed-set input:checked + label a {
+    /* background-color: #09a1a1 !important; Locked Dark Blue */
+    color: #ffffff !important;            /* Locked White Text */
+    font-weight: 800 !important;
+    box-shadow: inset 0 -3px 0px rgba(255,255,255,0.4) !important;
+}
+
+/* 6. Body Area */
+.md-typeset .tabbed-content {
+    border: 1px solid #09a1a1;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    padding: 24px;
+    background-color: var(--md-default-bg-color);
+}
+
+
+/* 1. FORCE THE ACTIVE COLOR ON THE SELECTED ANCHOR */
+.tabbed-set > input:nth-child(1):checked ~ .tabbed-labels > label:nth-child(1) a,
+.tabbed-set > input:nth-child(2):checked ~ .tabbed-labels > label:nth-child(2) a,
+.tabbed-set > input:nth-child(3):checked ~ .tabbed-labels > label:nth-child(3) a,
+.tabbed-set > input:nth-child(4):checked ~ .tabbed-labels > label:nth-child(4) a {
+    background-color: #09e5e5 !important; 
+    color: #ffffff !important;
+    font-weight: 800 !important;
+}
+
+/* 2. KILL THE SLIDING INDICATOR BAR */
+/* This bar is a separate layer that often blocks your background color */
+.tabbed-labels::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* 3. ENSURE THE ANCHOR IS A BLOCK */
+/* If the anchor isn't a block, the background only stays behind the text */
+.tabbed-labels label a {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+}

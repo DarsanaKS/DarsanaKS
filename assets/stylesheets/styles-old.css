@@ -1,0 +1,28 @@
+/*.copy-button {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}*/
+
+.myBlockQuoteC {
+  cursor: pointer;
+  left: 0;
+  background-color: #F0F0F0;
+  color: black;
+  padding: 5px 10px;
+  border: 1px solid lightgrey; 
+  border-radius: 5px;
+  position: relative; 
+}
+
+.myBlockQuoteC code {
+  font-size: 14px; 
+  display: block;
+  white-space: pre-wrap;
+}

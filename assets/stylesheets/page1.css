@@ -1,0 +1,100 @@
+/* =========================================================
+   extra.css
+   Custom styles for Darsana KS's MkDocs Material site.
+   Reference this in mkdocs.yml under `extra_css:`
+   ========================================================= */
+
+:root {
+  /* ---- Palette (grey / ink theme) ---- */
+  --paper:       #FAFAF7;
+  --paper-raised:#FFFFFF;
+  --ink:         #16181D;
+  --ink-soft:    #565C66;
+  --ink-faint:   #8A8F98;
+  --line:        #E4E1D8;
+
+  /* ---- Button Colors (existing) ---- */
+  --custom-button-bg:    #17a1a1; 
+  --custom-button-hover: #128b8b; 
+}
+
+/* -------------------------------------------------------
+   Optional: tie Material's own theme variables to the same
+   palette so the header / nav tabs / links stay consistent
+   with the rest of the custom layout. Safe to remove if you
+   prefer Material's default slate/indigo scheme instead.
+   ------------------------------------------------------- */
+[data-md-color-scheme="default"] {
+  /*--md-primary-fg-color:        var(--ink);
+  --md-primary-fg-color--light: var(--ink-soft);
+  --md-primary-fg-color--dark:  var(--ink);*/
+  --md-accent-fg-color:         var(--custom-button-bg);
+  --md-default-bg-color:        var(--paper);
+  --md-typeset-a-color:         var(--custom-button-bg);
+}
+
+/* =========================================================
+   About page layout
+   Wrap content in <div class="about-grid"> ... </div>
+   with an .about-text block and an .about-photo block inside.
+   Requires markdown_extensions: attr_list, md_in_html.
+   ========================================================= */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 0.6fr;
+  gap: 30px;
+  align-items: start;
+  margin: 24px 0 48px;
+}
+
+.about-text p {
+  color: #565C66;
+  max-width: 100ch;
+  line-height: 1.5;
+}
+
+.about-photo {
+  aspect-ratio: 1;
+  border-radius: 20px;
+  max-width: 40ch;
+  /*background: linear-gradient(160deg, #EFECE3, #DCD7C8);
+  border: 1px solid var(--line);
+  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "IBM Plex Mono", "Roboto Mono", monospace;
+  font-size: 13px;
+}
+
+@media (max-width: 820px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   Buttons — as supplied, unchanged
+   ========================================================= */
+
+/* Standard Buttons */
+.md-button {
+  background-color: var(--custom-button-bg) !important;
+  color: white !important;
+  border-color: var(--custom-button-bg) !important;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+/* Button Hover State */
+.md-button:hover {
+  background-color: var(--custom-button-hover) !important;
+  border-color: var(--custom-button-hover) !important;
+}
+
+/* Primary Style Buttons (if you use .md-button--primary) */
+.md-button--primary {
+  background-color: var(--custom-button-bg);
+  border-color: var(--custom-button-bg);
+}

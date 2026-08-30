@@ -1,0 +1,164 @@
+/* Hero Header Area */
+.landing-site .hero-container {
+    padding: 80px 20px;
+    text-align: center;
+    /* background: linear-gradient(rgba(0, 47, 93, 0.7), rgba(0, 47, 93, 0.7)), 
+                url('../img/Testimg.png'); 
+    background-size: cover;
+    background-position: center;*/
+    color: white;
+    margin: -2em -2em 2em -2em; /* Offsets MkDocs padding */
+    border-bottom: 4px solid #17a1a1; /* Optional: adds your brand red line at the bottom */
+}
+
+.landing-site h1 {
+    /* color: white; */
+    font-size: 2.5rem !important;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+/* The CTA Grid Boxes */
+.landing-site .grid.cards > ul > li {
+    border: 1px solid #17a1a1;
+    border-radius: 12px;
+    padding: 5px;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.landing-site .grid.cards > ul > li:hover {
+    border-color: #17a1a1; 
+    box-shadow: 0 8px 20px #F2F2F2;
+    transform: translateY(-3px);
+}
+
+.landing-site .grid.cards > ul > li a {
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #17a1a1 /* */
+    text-decoration: none;
+}
+
+/* Sidebar lists on landing page */
+.landing-site .side-box {
+    /*color: #b3aaaa*/
+    background: #fcfcfc;
+    border: 5px solid #eee;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #17a1a1;
+}
+/* SECTION 1: JOURNEY CARDS STYLING */
+.landing-site .journey-grid ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    color: #17a1a1;
+}
+
+.landing-site .journey-grid ul li {
+    background: white;
+    border: 1.5px solid #083279;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 3px 2px 3px #17a1a1;
+    text-align: left;
+    color: #17a1a1;
+}
+
+.landing-site .journey-grid ul li strong {
+    display: block;
+    color: #17a1a1;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+/* SECTION 2: DARK BLUE FOOTER STYLING */
+.landing-site .custom-footer {
+    background-color: #17a1a1;
+    color: white;
+    /* THE BREAKOUT LOGIC */
+    width: 100vw !important;       /* 100% of the browser window width */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw !important;  /* Pulls it to the left edge*/
+    margin-right: -50vw !important; /* Pulls it to the right edge */
+    
+    /*padding: 10px 0;*/
+    box-sizing: border-box;
+    margin: 4em -2em -2em -2em; /* Spans full width of page*/
+    padding: 5px 30px 5px 30px;
+}
+
+.landing-site .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #F2F2F2;
+    /*padding-bottom: 30px;
+    margin-bottom: 30px;*/
+}
+
+.landing-site .footer-bottom {
+    /*margin-top: 50px;
+    padding-top: 20px;*/
+    border-top: 1px solid #F2F2F2;
+    font-size: 0.8rem;
+    /*color: #E4F4FC !important;*/
+    text-align: center;
+}
+
+.landing-site .footer-logo {
+    height: 40px;
+}
+
+.landing-site .social-links .twemoji {
+    font-size: 1.5rem;
+    margin-left: 15px;
+    fill: white;
+    /*background-color: #E4F4FC; */
+}
+
+.landing-site .footer-columns {
+    display: flex !important;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*gap: 40px; */ 
+}
+
+.landing-site .footer-columns strong {
+    color: #F2F2F2;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.landing-site .footer-columns a {
+    color: #F2F2F2 !important;
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;    
+}
+
+.landing-site .footer-columns a:hover {
+    color: white !important;
+    font-weight: bolder;    
+}   
+
+.landing-site .footer-columns > div {
+    flex: 1;
+    min-width: 200px; /* This ensures they don't get too thin */
+    line-height: 1; /* Makes the list easier to read */
+}
+
+

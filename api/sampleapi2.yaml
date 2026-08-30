@@ -1,0 +1,194 @@
+openapi: 3.0.3
+info:
+  title: Sample Product Management API
+  description: A complete sample OpenAPI spec for managing products, and categories.
+  version: 1.0.0
+  contact:
+    name: API Support
+    email: support@example.com
+
+servers:
+  - url: https://api.example.com/v1
+    description: Production Server
+  - url: http://localhost:8000/v1
+    description: Local Development Server
+
+paths:
+  /products:
+    get:
+      summary: List all products
+      description: Retrieve a paginated list of available products with optional filtering.
+      operationId: listProducts
+      tags:
+        - Products
+      parameters:
+        - name: limit
+          in: query
+          description: Number of items to return (max 100).
+          required: false
+          schema:
+            type: integer
+            default: 10
+            example: 20
+        - name: category
+          in: query
+          description: Filter products by category.
+          required: false
+          schema:
+            type: string
+            example: electronics
+      responses:
+        '200':
+          description: A list of products retrieved successfully.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Product'
+        '400':
+          $ref: '#/components/responses/400BadRequest'
+
+    post:
+      summary: Create a new product
+      description: Adds a new product entry to the catalog. Requires API key authentication.
+      operationId: createProduct
+      tags:
+        - Products
+      security:
+        - ApiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewProductInput'
+      responses:
+        '201':
+          description: Product created successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        '401':
+          $ref: '#/components/responses/401Unauthorized'
+        '422':
+          $ref: '#/components/responses/422ValidationError'
+
+  /products/{productId}:
+    get:
+      summary: Get product details
+      description: Retrieves detailed information for a single product by ID.
+      operationId: getProductById
+      tags:
+        - Products
+      parameters:
+        - name: productId
+          in: path
+          required: true
+          description: Unique string identifier of the product.
+          schema:
+            type: string
+            example: "prod_9921"
+      responses:
+        '200':
+          description: Detailed product information.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        '404':
+          $ref: '#/components/responses/404NotFound'
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-KEY
+      description: Enter your API key in the header.
+
+  schemas:
+    Product:
+      type: object
+      required:
+        - id
+        - name
+        - price
+        - in_stock
+      properties:
+        id:
+          type: string
+          example: "prod_9921"
+        name:
+          type: string
+          example: "Wireless Noise-Canceling Headphones"
+        category:
+          type: string
+          example: "electronics"
+        price:
+          type: number
+          format: float
+          example: 199.99
+        in_stock:
+          type: boolean
+          example: true
+
+    NewProductInput:
+      type: object
+      required:
+        - name
+        - price
+      properties:
+        name:
+          type: string
+          example: "Smart Fitness Watch"
+        category:
+          type: string
+          example: "wearables"
+        price:
+          type: number
+          format: float
+          example: 149.50
+
+    ErrorResponse:
+      type: object
+      required:
+        - error_code
+        - message
+      properties:
+        error_code:
+          type: string
+          example: "INVALID_PARAMETER"
+        message:
+          type: string
+          example: "The requested field 'limit' must be an integer."
+
+  responses:
+    400BadRequest:
+      description: Invalid query parameters or request formatting.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+
+    401Unauthorized:
+      description: API Key is missing or invalid.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+
+    404NotFound:
+      description: Requested resource was not found.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+
+    422ValidationError:
+      description: Validation failed on request body attributes.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'

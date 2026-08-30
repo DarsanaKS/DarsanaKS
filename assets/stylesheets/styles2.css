@@ -1,0 +1,236 @@
+/*Styles*/
+:root {
+  --md-text-font: "Noto Sans", sans-serif;
+  --md-text-fontsize: "2em"
+}
+
+/* Heading levels */
+/* 1. Define colors for Light Mode (Default) */
+:root [data-md-color-scheme="default"] {
+  --heading-h1-color: #17a1a1; /* Dark Blue */
+}
+
+/* 2. Define colors for Dark Mode */
+:root [data-md-color-scheme="slate"] {
+  --heading-h1-color: #ffffff; /* White */
+}
+
+/* 3. Apply the variable to your H1 */
+.md-typeset h1 {
+  font-size: 38px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--heading-h1-color); /* This switches the color */
+}
+/* Targets h2 and headings in snippets */
+.md-typeset h2 {
+  font-weight: 700;
+}
+
+body, input {
+  font-family: "Noto Sans", sans-serif !important;
+}
+
+.myBlockQuoteC {
+  cursor: pointer;
+  left: 0;
+  background-color: #F0F0F0;
+  color: black;
+  padding: 5px 10px;
+  border: 1px solid lightgrey; 
+  border-radius: 5px;
+  position: relative; 
+}
+
+.myBlockQuoteC code {
+  font-size: 14px; 
+  display: block;
+  white-space: pre-wrap;
+}
+
+/* Tier Badge Base Styles */
+.badge {
+    font-size: x-small;
+    vertical-align: middle;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: 5px;
+    font-weight: bold;
+    /*text-transform: uppercase;*/
+}
+
+/* Pro - Blue/Teal (Standard for Growth) */
+.pro::after {
+    content: "PRO";
+    display: inline-block;
+    position: relative;
+    top: -1em;              /* Moves it up like a superscript */
+    background-color: #007bff;
+    color: white;
+    vertical-align: middle;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+/* Enterprise */
+.enterprise::after {
+    content: "Enterprise";
+    font-size: 0.7em;
+    position: relative;
+    top: -0.2em;              /* Moves it up like a superscript */
+    background-color: #855bef;
+    color: white;
+    vertical-align: middle;
+    padding: 2px 2px;
+    border-radius: 6px;
+    margin-left: 0px;
+    text-transform: uppercase;
+}
+
+
+/* New - Animated Star Badge */
+.new::after {
+    content: "NEW";
+    display: inline-block;
+    position: relative;
+    top: -1em;              /* Moves it up like a superscript */
+    background-color: #ff4500; /* Orange-Red */
+    color: white;
+    vertical-align: middle;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: 5px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+/* 1. Common Tooltip Styling tier badge */
+.pro:hover::before, 
+.enterprise:hover::before, 
+.new:hover::before {
+    position: absolute;
+    z-index: 10;
+    top: 100%; /* Position it below the badge */
+    left: 100%;
+    transform: translateX(-50%);
+    /*padding: 2px 2px;*/
+    background-color: #333; /* Dark tooltip background */
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    white-space: nowrap; /* Keeps text on one line */
+    font-weight: normal;
+    text-transform: none; /* Prevents tooltip from being all caps */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* 2. Set the Tooltip Text for each class */
+.pro:hover::before {
+    content: "Available for Pro Plan";
+}
+
+.enterprise:hover::before {
+    content: "Available for Enterprise Plan";
+}
+
+.new:hover::before {
+    content: "Newly released!";
+}
+
+/* 3. Ensure the parent element is the "anchor" */
+.pro, .enterprise, .new {
+    position: relative; /* This allows the tooltip to sit relative to the badge */
+    display: inline-block;
+    cursor: help;
+}
+
+
+/*Adjusting Logo Size*/
+.md-header__button.md-logo img {
+    height: 2rem; /* Adjust this value to scale the logo  - increase value to increase logo size*/
+    width: auto;
+    margin-top: 0.0rem; /* Nudges it to line up with the text - reduce value to align site name down*/
+}
+
+/* 1. Hide the dynamic section title that appears on scroll */
+.md-header__topic[data-md-component="header-topic"] {
+    display: none !important;
+}
+
+/* 2. Ensure the Site Name (the first topic) is always displayed */
+.md-header__topic:first-child {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* ==========================================
+   1. LIGHT MODE COLORS (default)
+   ========================================== */
+[data-md-color-scheme="default"] {
+  /* Top Title Bar (Header) */
+  --md-primary-fg-color:        #17a1a1; 
+  --md-primary-fg-color--dark:  white; 
+
+  /* Button Colors */
+  --custom-button-bg:           #17a1a1; /* Bright Blue Button */
+  --custom-button-hover:        #097b7b; /* Dark Blue Hover */
+}
+
+
+/* ==========================================
+   2. DARK MODE COLORS (slate)
+   ========================================== */
+[data-md-color-scheme="slate"] {
+  /* Top Title Bar (Header) */
+  --md-primary-fg-color:        #17a1a1; 
+  --md-primary-fg-color--dark:  white; 
+
+ /* --- Hyperlink Colors --- */
+  --md-typeset-a-color:         #8ebff6; /* Your bright link blue */
+  --link-hover-glow:            white; 
+
+  /* Button Colors */
+  --custom-button-bg:           #17a1a1; /* Light Button */
+  --custom-button-hover:        #097b7b; /* Darker Blue Hover */
+
+}
+
+
+/* ==========================================
+   3. APPLYING THE COLORS TO BUTTONS
+   ========================================== */
+
+/* Standard Buttons */
+.md-button {
+  display: inline-block !important;
+  background-color: var(--custom-button-bg) !important;
+  color: white !important;
+  border-color: var(--custom-button-bg) !important;
+  border-radius: 4px !important;
+  transition: background-color 0.3s ease-out;
+  padding: 7px 15px !important;
+}
+
+/* Button Hover State */
+.md-button:hover {
+  background-color: var(--custom-button-hover) !important;
+  border-color: var(--custom-button-hover) !important;
+}
+
+/* Primary Style Buttons (if you use .md-button--primary) */
+.md-button--primary {
+  background-color: var(--custom-button-bg);
+  border-color: var(--custom-button-bg);
+}
+
+/* video */
+video::-webkit-media-controls-picture-in-picture-button {
+    display: block !important;
+}

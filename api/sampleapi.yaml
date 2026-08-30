@@ -1,0 +1,46 @@
+openapi: 3.0.0
+info:
+  title: WebServiceLookup
+  version: 1.0.0
+  description: "This is a sample service"
+servers:
+  - url: http://{server}
+paths:
+  /nbt-qengine-service/web-service-lookup/webServiceLookupByName:
+    post:
+      summary: >-
+        http://localhost:8080/xxxx-service/web-service-lookup/webServiceLookupByName
+      parameters:
+        - name: access_token
+          in: header
+          schema:
+            type: string
+          example: 35fae748-5f4b-4797-9f24-c4f5128abb26
+        - name: Cookie
+          in: header
+          schema:
+            type: string
+          example: >-
+            JSESSIONID=9954543DAE59E6810561331DD3A25CDD.worker1;
+            COOKIE_SUPPORT=true; GUEST_LANGUAGE_ID=en_US
+      responses: {}
+  /web-service-lookup/webServiceLookupByName2:
+    post:
+      summary: >-
+        http://localhost:8080/nbt-qengine-service/web-service-lookup/webServiceLookupByName2
+      parameters:
+        - name: access_token
+          in: header
+          required: false
+          deprecated: false
+          schema: {}
+          example: 000000-5f4b-4797-9f24-0000000
+        - name: Cookie
+          in: header
+          required: false
+          deprecated: false
+          schema: {}
+          example: >-
+            JSESSIONID=9954543DAE59E6810561331DD3A25CDD.worker1;
+            COOKIE_SUPPORT=true; GUEST_LANGUAGE_ID=en_US
+      responses: {}

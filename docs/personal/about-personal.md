@@ -1,13 +1,11 @@
-# About Me  
 
-## A small personal intro -   
+# A Little About Me   
 
-I am a versatile and adaptive person who always tries to see the positive and vibrant part of life.<br>
-I love to travel and I am keen to explore the things around me.<br>
-Being a multilingual person, I give an effort to learn new languages as well.<br>
+I am a versatile and adaptable person who always tries to see the positive side of life.<br>
+I love travelling and exploring new places and experiences.<br>
+Being a multilingual person, I also enjoy learning new languages.<br>
 
-A happy family of three – husband, one daughter, and myself – hails from Bangalore, the IT capital of India.<br>
-Currently, we reside in the beautiful city of Budapest, Hungary, EU.<br>
+Family: A happy family of three – husband, one daughter, and me. We are origkinally from Bangalore, India and currently live in Budapest, Hungary, EU.<br>
 
 
 <!-- 

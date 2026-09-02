@@ -1,13 +1,14 @@
-# Darsana K S  
-## Technical Writer | Documentation Specialist  
+# Darsana K S[^↗^](./DarsanaKS_CV.pdf "CV"){ target="_blank" rel="noopener noreferrer" }   
+## Technical Writer | Documentation Specialist    
+
 :material-map-marker: Budapest, Hungary | :material-email: [darsana13@gmail.com](mailto:darsana13@gmail.com) | :material-phone:+36307424506 | :material-whatsapp: +918147710309  
-:material-linkedin: [https://www.linkedin.com/in/darsana-ks](https://www.linkedin.com/in/darsana-ks)<br>
+:material-linkedin: [https://www.linkedin.com/in/darsana-ks](https://www.linkedin.com/in/darsana-ks)  <br>
 **Portfolio** :material-github: [https://darsanaks.github.io/DarsanaKS/](https://darsanaks.github.io/DarsanaKS/)<br>
 
 **Date of Birth**: 13 Nov 1980  
 **Nationality**: Indian  
 
-## Summary
+## Summary  
 
 I am a versatile technical writer (English), specialized in architecting and managing technical documentation.  
 
@@ -104,11 +105,11 @@ I am a versatile technical writer (English), specialized in architecting and man
 - Technical editing, copy editing, pagination, layout checking, proof collation, issue compilation, validation, and QA by managing schedule and quality of production and dispatches.
 
 ## Personal Information  
-**Languages**: English, German (Basic-A1), Hindi, Malayalam, Kannada, Tamil.<br>
-**Hobbies**: Drawing, Badminton.<br>
+**Languages**: English, German (Basic-A1), Hindi, Malayalam, Kannada, Tamil<br>
+**Hobbies**: Drawing, Badminton<br>
 **Marital Status**: Married<br>
 **Children**: 1<br>
-**Current RP Address**: Hungary, 1097 Budapest, Toth Kalman Utca.
+**Current RP Address**: Hungary, 1097 Budapest, Toth Kalman Utca.   
 
 ## Declaration  
 I hereby declare that all the information provided above are true to the best of my knowledge and can be supported by relevant documents. I give consent to process my personal data for the purposes of recruitment in accordance with applicable data protection laws. I can provide references for verification purpose.<br>

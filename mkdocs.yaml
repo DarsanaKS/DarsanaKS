@@ -52,7 +52,7 @@ plugins:
       #module_name: mkdocs_pymacros/tier_logic  # It will look for tier_logic.py 
       #on_undefined: strict # Optional: Fails the build if you have a typo in a variable
       #include_yaml:
-        #- variables.yaml
+        #- variables.yaml #age year and exp to be made variable based.
       # main.py is loaded automatically if it's in the root folder
   - glightbox # for notes pics
   - monorepo # sepate yml for separte sections-not used

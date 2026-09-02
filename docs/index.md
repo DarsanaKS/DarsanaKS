@@ -8,18 +8,18 @@ hide:
 <div class="about-text" markdown="1">
 
 # Welcome to my Portfolio Site!  
-## Happy to see you here...  
+## Glad to have you here ...  
 
-#### I Am ---   
+#### Who I Am   
 - A technical writer by profession and I bridge the gap between software product and users with clear and simple documentation.   
 
-#### I have experience of ---  
-- 9+ years in software product documentation (IT/Software).<br>
-- 5+ years in technical editing (Technical publishing industry).<br>
-#### My Goal is to ---  
-- Transform complex technical concepts into clear and user-focused documentation.  
-- Help users confidently adopt products and minimize the need for support.    
-- Manage and enhance documentation to support business goals.
+#### My Experience  
+- 9+ years experience in software product documentation (IT/Software).<br>
+- 5+ years experience in technical editing (Technical publishing industry).<br>
+#### My Goal  
+- Transform complex technical concepts into clear, user-focused documentation.  
+- Help users confidently adopt products while reducing the need for support.    
+- Manage and improve documentation to support business goals.
 
 </div>
 

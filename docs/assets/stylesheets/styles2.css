@@ -48,6 +48,7 @@ body, input {
   white-space: pre-wrap;
 }
 
+
 /* Tier Badge Base Styles */
 .badge {
     font-size: x-small;
@@ -87,7 +88,6 @@ body, input {
     margin-left: 0px;
     text-transform: uppercase;
 }
-
 
 /* New - Animated Star Badge */
 .new::after {
@@ -130,17 +130,18 @@ body, input {
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
+
 /* 2. Set the Tooltip Text for each class */
 .pro:hover::before {
-    content: "Available for Pro Plan";
+    content: "xxxxxxxxxxxxxxxxx";
 }
 
 .enterprise:hover::before {
-    content: "Available for Enterprise Plan";
+    content: "xxxxxxxxxxxxxxxxxxx";
 }
 
 .new:hover::before {
-    content: "Newly released!";
+    content: "xxxxxxxxxxxxx";
 }
 
 /* 3. Ensure the parent element is the "anchor" */
@@ -215,7 +216,7 @@ body, input {
   border-color: var(--custom-button-bg) !important;
   border-radius: 4px !important;
   transition: background-color 0.3s ease-out;
-  padding: 7px 15px !important;
+  padding: 7px 10px !important;
 }
 
 /* Button Hover State */

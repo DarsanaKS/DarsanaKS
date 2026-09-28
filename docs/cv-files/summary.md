@@ -1,6 +1,5 @@
 # Career Summary  
 
-
 A versatile and adaptable documentation professional with experience in creating clear, concise, and user-friendly content.
 Skilled in developing end-user manuals, admin manuals, developer/API documentation, QA documentation, and business analysis documents.  
 
@@ -14,9 +13,9 @@ Skilled in developing end-user manuals, admin manuals, developer/API documentati
 - Skilled in proactive task management.  
 - Demonstrates strong collaborative skills.  
 - Skilled at resolving issues, prioritizing tasks, multi-tasking and meeting tight deadlines.
-- Proven ability to manage projects independently in a dynamic startup environment.   
+- Proven ability to manage projects independently in a dynamic startup environment.
 - Experienced in team management and mentoring.  
-- Tech enthusiast with knowledge of RPA, AI, ML, NLP, RAG, LLM, Generative AI, AI agents, and prompt engineering.    
+- Tech enthusiast with knowledge of RPA, AI, ML, NLP, RAG, LLM, Generative AI, AI agents, and prompt engineering.  
 
 ## Personal Strengths  
 

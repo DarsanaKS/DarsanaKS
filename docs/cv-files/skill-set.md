@@ -1,6 +1,7 @@
 # Skill Set
 
 ## Documentation
+
 <div style="display: flex; gap: 20px;">
   <div style="flex: 1;">
   <ul>
@@ -38,6 +39,7 @@
 </div>
  
 ## Tools
+
 <div style="display: flex; gap: 20px;">
   <div style="flex: 1;">
     <ul>
@@ -46,7 +48,8 @@
   <li>HTML</li>
   <li>CSS</li>
   <li>Javascript</li>
-  <li>XML</li>
+  <li>Python</li>
+  <li>Jinja</li>
   <li>JSON</li>
   <li>SQL</li>
   </ul>
@@ -71,6 +74,7 @@
     <ul>
   <li>Docs-as-code</li>
   <li>DITA</li>
+  <li>Diátaxis</li>
   <li>Adobe Acrobat</li>
   <li>SharePoint</li>
   <li>Confluence</li>
@@ -119,4 +123,3 @@
   </ul>
   </div>
 </div>
-

@@ -13,4 +13,3 @@
     - Microcopy (UX) Mentorship, 2024 | [View](../certificates/professional/TWT-microcopy-mentorship-certificate-dks.pdf){: target="_blank" rel="noopener noreferrer" title="View Certificate"}  
     - API Documentation Certification, 2023 | [View](../certificates/professional/TWT_API-documentation-certificate-dks.pdf){: target="_blank" rel="noopener noreferrer" title="View Certificate"}  
     - Technical Writing Certification, 2018 | [View](../certificates/professional/TW-course-certificate-dks.png){: target="_blank" rel="noopener noreferrer" title="View Certificate"}  
-

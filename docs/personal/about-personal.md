@@ -1,12 +1,11 @@
 
-# A Little About Me   
+# A Little About Me  
 
-I am a versatile and adaptable person who always tries to see the positive side of life.<br>
-I love travelling and exploring new places and experiences.<br>
-Being a multilingual person, I also enjoy learning new languages.<br>
+I am a versatile and adaptable person who always tries to see the positive side of life.  
+I love travelling and exploring new places and experiences.  
+Being a multilingual person, I also enjoy learning new languages.  
 
-Family: A happy family of three – husband, one daughter, and me. We are origkinally from Bangalore, India and currently live in Budapest, Hungary, EU.<br>
-
+Family: A happy family of three – husband, one daughter, and me. We are origkinally from Bangalore, India and currently live in Budapest, Hungary, EU.  
 
 <!-- 
 
@@ -24,5 +23,3 @@ Family: A happy family of three – husband, one daughter, and me. We are origki
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
 -->
-
-

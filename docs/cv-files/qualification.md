@@ -3,9 +3,10 @@
 === "Academic"
     - Post Graduate Diploma in Computer Applications, 2006  | [View](../certificates/academic/PGDCA-certificate.pdf){: target="_blank" rel="noopener noreferrer" title="View Certificate"} 
     - MSc. Mathematics (**H+**), 2005 | [View](../certificates/academic/MSc-certificate.pdf){: target="_blank" rel="noopener noreferrer" title="View Certificate"} | [View Anabin Evaluation](../certificates/academic/anabin-cert-evaluation-ms.png){: target="_blank" rel="noopener noreferrer" title="View Evaluation"}  
-    - Bachelor Degree - Bsc. Mathematics (**H+**), 2001
+    - BSc. Mathematics (**H+**), 2001
 
 === "Professional"  
+    - Foundations of Project Mangement, 2026 | [View](../certificates/professional/coursera-proj-mgmt.pdf){: target="_blank" rel="noopener noreferrer" title="View Certificate"}  
     - Product Mangement, 2026 | [View](../certificates/professional/coursera-prod-mgmt.pdf){: target="_blank" rel="noopener noreferrer" title="View Certificate"}  
     - AI Overview Specialization, 2026 | [View](../certificates/professional/ai-overview-specialization.pdf){: target="_blank" rel="noopener noreferrer" title="View Certificate"}  
     - AI in Software Engineering and Documentation, 2026 | [View](../certificates/professional/genai-in-software-testing-and-documentation.pdf){: target="_blank" rel="noopener noreferrer" title="View Certificate"}  

@@ -2,10 +2,10 @@
 
 ## Name and Address
 
-**Full Name**: Darsana KS  
+**Full Name**: Darsana K S  
 **Date of Birth**: 13 Nov 1980  
-**Current Location**: Budapest, Hungary  
-**Current RP Address**: Hungary, 1097 Budapest, Toth Kalman Utca.  
+**Current Address**: Hungary, 1097 Budapest, Toth Kalman Utca.  
+**Visa Staus**: Family Reunification RP, Hungary  
 **Nationality**: Indian
 
 ## Contact Details

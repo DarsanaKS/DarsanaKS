@@ -3,9 +3,9 @@
 
 I am a versatile and adaptable person who always tries to see the positive side of life.  
 I love travelling and exploring new places and experiences.  
-Being a multilingual person, I also enjoy learning new languages.  
+Being a multilingual person, I enjoy learning new languages.  
 
-Family: A happy family of three – husband, one daughter, and me. We are origkinally from Bangalore, India and currently live in Budapest, Hungary, EU.  
+Family: A happy family of three – husband, one daughter, and me. We are originally from Bangalore, India and currently live in Budapest, Hungary, EU.  
 
 <!-- 
 

@@ -22,10 +22,10 @@ I am a versatile technical writer (English), specialized in architecting and man
 
 ## Skills  
 
-- **Documentation**:
-  - User manuals, API documentation, functional requirement specs, test cases, release notes, use cases, case studies, FAQs, deployment procedures, how to videos, etc.
-  - Docs-as-code, Topic-based authoring, DITA, Information Architechture (Diátaxis)
-- **Tools**: MS Office, VS Code, Git, JIRA, Confluence, Open Project, Markdown, YAML, HTML, CSS, JS, JSON, SQL, MK Docs, RoboHelp, MadcapFlare, MS Visio, SnagIT, Greenshot, Adobe Acrobat, Postman, Swagger, Liferay, EIQ Platform.
+- **Documentation**:  
+    - User manuals, API documentation, functional requirement specs, test cases, release notes, use cases, case studies, FAQs, deployment procedures, how to videos, etc.
+    - Docs-as-code, Topic-based authoring, DITA, Information Architechture (Diátaxis)  
+- **Tools**: MS Office, VS Code, Git, JIRA, Confluence, Open Project, Markdown, YAML, HTML, CSS, JS, Python, Jinja, SQL, MK Docs, RoboHelp, MadcapFlare, MS Visio, SnagIT, Greenshot, Adobe Acrobat, Postman, Swagger, Liferay, EIQ Platform.
 - **Technology**: Tech enthusiast experienced in domains like RPA, AI, ML, RAG, LLM, Gen AI, AI Agent, prompt engineering, etc.
 - **Testing**: Manual testing, API testing, user experience testing, and UI/ UX validation.
 - **Soft Skills**: Good verbal and written communication in English, strong collaborative and analytical skills, proactive, and efficiency in task management.
@@ -54,7 +54,7 @@ I am a versatile technical writer (English), specialized in architecting and man
 - Creating documentation for the **EIQ Platform** (**SaaS** version, **eiq360.ai** available in Google Marketplace).
 - Collaboration with the DevOps, testing team, QA, PMs, and other stakeholders.
 - Managing, creating, and maintaining the docs environment, reporting and tracking UI, functional, and UX-related product issues.
-- Documentation strategy, tooling, and online site creation using Markdown, HTML, CSS, YAML, JavaScript (using MK Docs Material theme).
+- Documentation strategy, tooling, and online site creation using Markdown, HTML, CSS, YAML, JS, Python, Jinja (using MK Docs Material theme).
 - Mentoring team, preparing templates, style guides, documentation standards, best practices, and managing review processes.
 - Tracking and updating the documentation in sync with the build updates and managing the documentation repository.
 
@@ -115,6 +115,7 @@ I am a versatile technical writer (English), specialized in architecting and man
 **Marital Status**: Married  
 **Children**: 1  
 **Current RP Address**: Hungary, 1097 Budapest, Toth Kalman Utca.  
+**Visa Staus**: Family Reunification RP, Hungary
 
 ## Declaration  
 

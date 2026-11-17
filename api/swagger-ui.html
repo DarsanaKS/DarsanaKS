@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>API References</title>
+  <title>Swagger API References</title>
   <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist@5/swagger-ui.css" />
-</head>
+  </head>
 <body>
   <div id="swagger-ui"></div>
   <!-- 1. Load Swagger UI Base Bundle -->
@@ -18,7 +18,7 @@
   <script>
     window.onload = () => {
       window.ui = SwaggerUIBundle({
-        url: "./sampleapi2.yaml", // Ensure sampleapi.yaml is in the SAME folder as index.html
+        url: "./swagger-api.yaml", // Ensure yaml is in the SAME folder as .html file
         dom_id: '#swagger-ui',
         deepLinking: true,
         

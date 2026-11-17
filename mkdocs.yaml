@@ -45,6 +45,7 @@ theme:
     accent: deep purple
 plugins:
   - search
+  - redoc-tag
   - swagger-ui-tag
   - section-index # to provide file reference for accordion heads
   - mermaid2

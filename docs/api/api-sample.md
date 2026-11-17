@@ -4,13 +4,13 @@
 
 Navigate to API reference in Swagger interface.  
 
-[Open Swagger Interface](index2.html){ .md-button target="_blank" rel="noopener noreferrer" }  
+[Open Swagger Interface](swagger-ui.html){ .md-button target="_blank" rel="noopener noreferrer" }  
 
 ## Redocly Interface
 
 Navigate to API reference in Redocly interface.  
 
-[Redocly Interface](index3.html){ .md-button target="_blank" rel="noopener noreferrer" }
+[Redocly Interface](redoc-ui.html){ .md-button target="_blank" rel="noopener noreferrer" }
 
 ## View PDF
 

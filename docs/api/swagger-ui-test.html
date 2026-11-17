@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>API Documentation - Swagger UI</title>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@5.9.0/swagger-ui.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #fafafa;
+      font-family: sans-serif;
+    }
+    .swagger-ui {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .swagger-ui .topbar {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="swagger-ui"></div>
+  <script src="https://unpkg.com/swagger-ui-dist@5.9.0/swagger-ui-bundle.js"></script>
+  <script>
+    window.onload = function() {
+      window.ui = SwaggerUIBundle({
+        url: "swagger-api.yaml",
+        dom_id: '#swagger-ui',
+        deepLinking: true,
+        presets: [
+          SwaggerUIBundle.presets.apis,
+          SwaggerUIBundle.StandaloneLayout
+        ],
+        docExpansion: "list",
+        defaultModelsExpandDepth: 1,
+        // Hides the "Try it out" interactive buttons completely
+        supportedSubmitMethods: [],
+        syntaxHighlight: {
+          activate: true,
+          theme: "agate"
+        }
+      });
+    };
+  </script>
+</body>
+</html>

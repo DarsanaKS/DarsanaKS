@@ -17,7 +17,7 @@ paths:
   /products:
     get:
       summary: List all products
-      description: Retrieve a paginated list of available products with optional filtering.
+      description: Retrieves a paginated list of available products with optional filtering.
       operationId: listProducts
       tags:
         - Products
@@ -39,7 +39,7 @@ paths:
             example: electronics
       responses:
         '200':
-          description: A list of products retrieved successfully.
+          description: Retrieves a list of product.
           content:
             application/json:
               schema:

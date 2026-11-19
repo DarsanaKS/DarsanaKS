@@ -8,10 +8,298 @@
       margin: 0;
       padding: 0;
     }
+    .md-main:has(redoc) .md-grid,
+    body:has(redoc) .md-header .md-grid {
+      max-width: none;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .md-main:has(redoc) .md-main__inner {
+      margin-top: 0;
+    }
+
+    .md-main:has(redoc) .md-content__inner {
+      margin: 0;
+      padding: 0;
+    }
+
+    .md-main:has(redoc) .md-content__inner::before {
+      display: none;
+    }
+
+    .redoc-wrap > div:last-child {
+      display: none;
+    }
+
+    .redoc-wrap .api-info {
+      width: 100%;
+    }
+
+    /* API title + version (from the spec's info block): show as plain text.
+      Redoc always renders this as an <h1>; CSS cannot change the element,
+      so this only removes the heading look. !important is needed to
+      override the h1 rule (.redoc-wrap h1) in redocstyle.css. */
+    .redoc-wrap .api-info h1,
+    .redoc-wrap .api-info h1 span {
+      font-family: Noto sans-serif;
+      font-size: 1rem !important;
+      font-weight: 200 !important;
+      letter-spacing: normal !important;
+      line-height: 1.6 !important;
+      color: rgb(69, 159, 120);
+      margin: 0 0 0.5em !important;
+    }
+
+    .redoc-wrap .api-info h1 span {
+      display: block;
+      font-size: 0.85rem !important;
+      color: #6b6b6b !important;
+    }
+    .api-content [data-section-id]:not([data-section-id*="operation/"]) > div > div:first-child {
+      width: 100%;
+    }
+
+    @media (min-width: 75rem) {
+      .api-content > [data-section-id*="operation/"] {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      .api-content > [data-section-id*="operation/"] > div > div {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+    }
+    /* Breakpoint */
+        /*Styles*/
+    :root {
+      --md-text-font: "Noto Sans", sans-serif;
+      --md-text-fontsize: "2em"
+    }
+
+    /* Heading levels */
+    /* 1. Define colors for Light Mode (Default) */
+    :root [data-md-color-scheme="default"] {
+      --heading-h1-color: #007bff; /* Dark Blue */
+    }
+
+    /* 3. Apply the variable to your H1
+      .md-content__inner > h1 = page heading and .redoc-wrap h1 = Redoc
+      controller (tag) headings; needed because redoc-fix.js removes
+      .md-typeset from the Redoc page. */
+    .md-typeset h1,
+    .md-content__inner > h1,
+    .redoc-wrap h1 {
+      font-size: 38px;
+      font-weight: 300;
+      letter-spacing: -0.02em;
+      color: var(--heading-h1-color); /* This switches the color */
+      font-family: "Noto Sans", sans-serif !important;
+    }
+    /* Targets h2 and headings in snippets (.redoc-wrap h2 = Redoc method titles) */
+    .md-typeset h2,
+    .redoc-wrap h2 {
+      font-weight: 700;
+    }
+
+    body, input {
+      font-family: "Noto Sans", sans-serif !important;
+    }
+
+    .myBlockQuoteC {
+      cursor: pointer;
+      left: 0;
+      background-color: #F0F0F0;
+      color: black;
+      padding: 5px 10px;
+      border: 1px solid lightgrey; 
+      border-radius: 5px;
+      position: relative; 
+    }
+
+    .myBlockQuoteC code {
+      font-size: 14px; 
+      display: block;
+      white-space: pre-wrap;
+    }
+
+    /* Tier Badge Base Styles */
+    .badge {
+        font-size: x-small;
+        vertical-align: middle;
+        padding: 2px 8px;
+        border-radius: 4px;
+        margin-left: 5px;
+        font-weight: bold;
+        /*text-transform: uppercase;*/
+    }
+
+    /* Pro - Blue/Teal (Standard for Growth) */
+    .pro::after {
+        content: "PRO";
+        display: inline-block;
+        position: relative;
+        top: -1em;              /* Moves it up like a superscript */
+        background-color: #007bff;
+        color: white;
+        vertical-align: middle;
+        padding: 2px 8px;
+        border-radius: 4px;
+        margin-left: 10px;
+    }
+
+    /* Enterprise */
+    .enterprise::after {
+        content: "Enterprise";
+        font-size: 0.7em;
+        position: relative;
+        top: -0.2em;              /* Moves it up like a superscript */
+        background-color: #7e56c2;
+        color: white;
+        vertical-align: middle;
+        padding: 2px 2px;
+        border-radius: 6px;
+        margin-left: 0px;
+        text-transform: uppercase;
+    }
+
+
+    /* New - Animated Star Badge */
+    .new::after {
+        content: "NEW";
+        display: inline-block;
+        position: relative;
+        top: -1em;              /* Moves it up like a superscript */
+        background-color: #ff4500; /* Orange-Red */
+        color: white;
+        vertical-align: middle;
+        padding: 2px 8px;
+        border-radius: 4px;
+        margin-left: 5px;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% { opacity: 1; }
+        50% { opacity: 0.6; }
+        100% { opacity: 1; }
+    }
+
+    /* 1. Common Tooltip Styling tier badge */
+    .pro:hover::before, 
+    .enterprise:hover::before, 
+    .new:hover::before {
+        position: absolute;
+        z-index: 10;
+        top: 100%; /* Position it below the badge */
+        left: 100%;
+        transform: translateX(-50%);
+        /*padding: 2px 2px;*/
+        background-color: #333333b7; /* Dark tooltip background */
+        color: #fff;
+        font-size: 12px;
+        border-radius: 4px;
+        white-space: nowrap; /* Keeps text on one line */
+        font-weight: normal;
+        text-transform: none; /* Prevents tooltip from being all caps */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    /* 2. Set the Tooltip Text for each class */
+    .pro:hover::before {
+        content: "Available for Pro Plan";
+    }
+
+    .enterprise:hover::before {
+        content: "Available for Enterprise Plan";
+    }
+
+    .new:hover::before {
+        content: "Newly released!";
+    }
+
+    /* 3. Ensure the parent element is the "anchor" */
+    .pro, .enterprise, .new {
+        position: relative; /* This allows the tooltip to sit relative to the badge */
+        display: inline-block;
+        cursor: help;
+    }
+
+
+    /*Adjusting Logo Size*/
+    .md-header__button.md-logo img {
+        height: 1.5rem; /* Adjust this value to scale the logo  - increase value to increase logo size*/
+        width: auto;
+        margin-top: 0.0rem; /* Nudges it to line up with the text - reduce value to align site name down*/
+    }
+
+    /* 1. Hide the dynamic section title that appears on scroll */
+    .md-header__topic[data-md-component="header-topic"] {
+        display: none !important;
+    }
+
+    /* 2. Ensure the Site Name (the first topic) is always displayed */
+    .md-header__topic:first-child {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    /* ==========================================
+      1. LIGHT MODE COLORS (default)
+      ========================================== */
+    [data-md-color-scheme="default"] {
+      /* Top Title Bar (Header) */
+      --md-primary-fg-color:        #1289c9; /* Bright Blue Header */
+      --md-primary-fg-color--dark:  white; /* Header Hover/Accent */
+
+    /* --- Hyperlink Colors --- */
+      --md-typeset-a-color:         #137af0; /* Your bright link blue */
+      --link-hover-glow:            white;
+
+      /* Button Colors */
+      --custom-button-bg:           #1289c9; /* Bright Blue Button */
+      --custom-button-hover:        #b90fd3; /* Dark purple Hover */
+    }
+
+
+    /* ==========================================
+      3. APPLYING THE COLORS TO BUTTONS
+      ========================================== */
+
+    /* Standard Buttons */
+    .md-button {
+      background-color: var(--custom-button-bg) !important;
+      color: white !important;
+      border-color: var(--custom-button-bg) !important;
+      transition: background-color 0.3s ease-out;
+      padding: 5px 5px;
+      border-radius: 20px;
+      line-height: 1;
+    }
+
+    /* Button Hover State */
+    .md-button:hover {
+      background-color: var(--custom-button-hover) !important;
+      border-color: var(--custom-button-hover) !important;
+    }
+
+    /* Primary Style Buttons (if you use .md-button--primary) */
+    .md-button--primary {
+      background-color: var(--custom-button-bg);
+      border-color: var(--custom-button-bg);
+    }
+
+    /* video */
+    video::-webkit-media-controls-picture-in-picture-button {
+        display: block !important;
+    }
+
   </style>
 </head>
 <body>
-
+  <h1> Sample Product Management API</h1>
   <!-- Redoc element loads your OpenAPI YAML into a 3-panel layout -->
   <redoc spec-url="./redoc-api.yaml" hide-download-button="false"></redoc>
 

@@ -1,0 +1,99 @@
+/*
+  redoc-ui.css
+  Lets the Redoc API reference use the full browser width inside the
+  MkDocs Material theme. Material centres content in a 61rem grid and pads
+  it; these rules remove that limit and padding.
+
+  Scope: only pages that contain a <redoc> element (via :has), so other
+  pages keep the normal Material layout.
+*/
+
+/* Remove the max-width limit on the centred grid in the content area
+   and the header (both use .md-grid) */
+.md-main:has(redoc) .md-grid,
+body:has(redoc) .md-header .md-grid {
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Remove the outer margins around the main content area */
+.md-main:has(redoc) .md-main__inner {
+  margin-top: 0;
+}
+
+/* Remove the padding around the page content */
+.md-main:has(redoc) .md-content__inner {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove the spacer Material adds above the page content */
+.md-main:has(redoc) .md-content__inner::before {
+  display: none;
+}
+
+/* ------------------------------------------------------------------
+   Three-column layout only for API methods (operations)
+   Redoc draws the dark right panel as one full-height background
+   strip (last child of .redoc-wrap). Hiding it leaves the dark colour
+   only on each operation's own sample panel, so the intro and the
+   controller (tag) headings span the full content width.
+   ------------------------------------------------------------------ */
+
+/* Hide the full-height dark background strip */
+.redoc-wrap > div:last-child {
+  display: none;
+}
+
+/* Intro block (API title, Download, description): full width */
+.redoc-wrap .api-info {
+  width: 100%;
+}
+
+/* API title + version (from the spec's info block): show as plain text.
+   Redoc always renders this as an <h1>; CSS cannot change the element,
+   so this only removes the heading look. !important is needed to
+   override the h1 rule (.redoc-wrap h1) in redocstyle.css. */
+.redoc-wrap .api-info h1,
+.redoc-wrap .api-info h1 span {
+  font-family: inherit !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  letter-spacing: normal !important;
+  line-height: 1.6 !important;
+  color: inherit !important;
+  margin: 0 0 0.5em !important;
+}
+
+/* Put the version on its own line under the title, smaller and grey.
+   !important is needed to override the title rule above. */
+.redoc-wrap .api-info h1 span {
+  display: block;
+  font-size: 0.85rem !important;
+  color: #6b6b6b !important;
+}
+/* Controller (tag) and text sections: full width.
+   Operation sections have ids containing "operation/" and keep 3 columns. */
+.api-content [data-section-id]:not([data-section-id*="operation/"]) > div > div:first-child {
+  width: 100%;
+}
+
+/* Wide screens only (Redoc's 3-column breakpoint is 75rem):
+   move each operation's vertical padding from the section into its
+   two panels (middle + dark samples), so the dark panel runs the full
+   height of the method with no white band above or below it.
+   The "> " after .api-content limits this to top-level method sections;
+   without it the padding also hit every block inside a method
+   (description, authorizations, parameters) and caused large gaps. */
+@media (min-width: 75rem) {
+  .api-content > [data-section-id*="operation/"] {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .api-content > [data-section-id*="operation/"] > div > div {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

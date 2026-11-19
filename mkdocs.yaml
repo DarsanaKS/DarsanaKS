@@ -113,9 +113,9 @@ extra_css:
   - assets/stylesheets/table.css
   - assets/stylesheets/custom-admonitions.css
   - assets/stylesheets/page1.css
+  - assets/stylesheets/redoc-ui.css
 extra_files:
   - api/swagger-view.html  
-  #- api/sampleapi2.yaml
   - api/hide-items.js
 extra:
   version:
